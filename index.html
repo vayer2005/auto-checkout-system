@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Automatic Checkout System</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="style.css">
+  </head>  
+  <body>
+    <h1>Automatic Checkout System</h1>
+
+    <div style="float:right; width: 40%;">
+      <h1>Items</h1>
+      <table>
+        <thead>
+          <td>Item</td>
+          <td>Amount</td>
+          <td>Price per Unit</td>
+          <tbody id="items">
+
+          </tbody>
+        </thead>
+      </table>
+      <button id = "checkout" style="margin-top:50px; padding:5px; float:left;">Proceed to Checkout</button>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>No checkout functionality as of now, this is just a demo of the scanning</p>
+    </div>
+    
+    <section style="float:left;" id="demos">
+      
+      <div id="liveView" class="camView">
+        <video id="webcam" autoplay muted width="600" height="430"></video>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
